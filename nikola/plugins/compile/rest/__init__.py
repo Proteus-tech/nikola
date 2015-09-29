@@ -197,4 +197,4 @@ def rst2html(source, source_path=None, source_class=docutils.io.StringInput,
     pub.set_destination(None, destination_path)
     pub.publish(enable_exit_status=enable_exit_status)
 
-    return pub.writer.parts['docinfo'] + pub.writer.parts['fragment'], pub.document.reporter.max_level, pub.settings.record_dependencies
+    return pub.writer.parts['docinfo'] + pub.writer.parts['html_body'], pub.document.reporter.max_level, pub.settings.record_dependencies
